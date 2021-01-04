@@ -49,8 +49,8 @@ camera = cv2.VideoCapture(0)
 while True:
 
     (grabbed, frame) = camera.read()
-    # frame = cv2.flip(frame, 1)
-    # hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
+    frame = cv2.flip(frame, 1)
+    hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
 
     # frame = cv2.rectangle(frame, (40,1), (140,65), (122,122,122), -1)
     # frame = cv2.rectangle(frame, (160,1), (255,65), colors[0], -1)
